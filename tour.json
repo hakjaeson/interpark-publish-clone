@@ -1,0 +1,31 @@
+{
+  "total": 6,
+  "tour_1": {
+    "file": "images/shoes.jpeg",
+    "url": "a.html",
+    "dealEvent": "국적기직항",
+    "dealEventDesc": "인솔자 동행, 선택관광 All 포함",
+    "desc": "[스페인 포르투갈10일]2대 야경,3대 자유시간,포르투 완전정복",
+    "price": "3,999,000"
+  },
+  "tour_2": {
+    "file": "images/shoes.jpeg",
+    "url": "b.html"
+  },
+  "tour_3": {
+    "file": "images/shoes.jpeg",
+    "url": "c.html"
+  },
+  "tour_4": {
+    "file": "images/shoes.jpeg",
+    "url": "d.html"
+  },
+  "tour_5": {
+    "file": "images/shoes.jpeg",
+    "url": "e.html"
+  },
+  "tour_6": {
+    "file": "images/shoes.jpeg",
+    "url": "f.html"
+  }
+}

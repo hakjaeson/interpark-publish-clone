@@ -1,0 +1,124 @@
+.book {
+  padding-top: 0;
+  padding-bottom: 90px;
+  position: relative;
+}
+.book-inner {
+  margin: 0 auto;
+  position: relative;
+  width: 1280px;
+}
+.book-header {
+  position: relative;
+}
+.book-header-title-txt {
+  margin: 10px;
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.book-header-sub-txt {
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  color: #a7a9a7;
+  text-align: center;
+}
+.book-main {
+  padding: 25px 0;
+  position: relative;
+}
+.book-category {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.book-list {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+}
+
+.book-list li {
+  display: flex;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.book-slide-wrapper {
+  margin-top: 30px;
+}
+.book-slide-item {
+  position: relative;
+  width: 355px;
+}
+.book-slide-item a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 13px;
+}
+.book-slide-item a img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.book-slide-prev::before {
+  content: "";
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 10px;
+  height: 18px;
+  background: url("../images/slider_arrow.svg") no-repeat center;
+  transform: rotateY(180deg);
+}
+.book-slide-next::before {
+  content: "";
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 10px;
+  height: 18px;
+  background: url("../images/slider_arrow.svg") no-repeat center;
+  /* transform: rotateY(180deg); */
+}
+.book-slide-prev {
+  transform: translateX(-50%) translateY(-50%);
+  border: 1px solid #c9c9c9;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.book-slide-next {
+  transform: translateX(50%) translateY(-50%);
+  border: 1px solid #c9c9c9;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.book-footer {
+  position: relative;
+}

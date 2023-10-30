@@ -8,6 +8,8 @@
   position: relative;
   width: 1280px;
 }
+
+/* recommend header CSS */
 .recommend-header {
   position: relative;
 }
@@ -19,14 +21,16 @@
   color: #000;
   text-align: center;
 }
-.recommend-txt {
+.recommend-sub {
   display: block;
   position: relative;
   font-size: 1.8rem;
   color: #a7a9a7;
   text-align: center;
 }
-.recommend-main {
+
+/* recommend content CSS */
+.recommend-content {
   padding: 25px 0;
   position: relative;
 }
@@ -47,6 +51,7 @@
   position: relative;
 }
 
+/* recommend content - swiper CSS */
 .swiper {
   width: 100%;
   height: 100%;
@@ -139,54 +144,7 @@
   position: relative;
   width: 100%;
 } */
-.recommend-slide-prev::before {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  width: 10px;
-  height: 18px;
-  background: url("../images/slider_arrow.svg") no-repeat center;
-  content: "";
-  transform: rotateY(180deg);
-}
-.recommend-slide-next::before {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  width: 10px;
-  height: 18px;
-  background: url("../images/slider_arrow.svg") no-repeat center;
-  content: "";
-  /* transform: rotateY(180deg); */
-}
-.recommend-slide-prev {
-  border: 1px solid #c9c9c9;
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  transform: translateX(-50%) translateY(-50%);
-  border-radius: 50%;
-}
-.recommend-slide-next {
-  border: 1px solid #c9c9c9;
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-  position: absolute;
-  top: 50%;
-  right: 0;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  transform: translateX(50%) translateY(-50%);
-  border-radius: 50%;
-}
+
 .recommend-footer {
   position: relative;
 }

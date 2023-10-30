@@ -21,11 +21,24 @@ function maketicketSlideHtml(_data) {
     let ticketTemp = `
     <div class="swiper-slide">
         <div class="ticket-slide-item">
+        <div class="tour-img-wrapper">
             <a href="${ticketRes["ticket_" + i].url}">
                 <img src="${ticketRes["ticket_" + i].file}" alt="${
       ticketRes["ticket_" + i].url
     }" />
-            </a>
+    <span class="ticket-rank">${ticketRes["ticket_" + i].rank}</span> 
+    </div>
+    <div class="ticket-info">
+    <ul><li>
+    <span class= "ticketing-title">${ticketRes["ticket_" + i].title}</span></li>
+    <li><span class= "ticket-place">${
+      ticketRes["ticket_" + i].place
+    }</span></li>
+    <li><span class= "ticket-date">${ticketRes["ticket_" + i].date}</span></li>
+    <li><span class= "ticket-status">${ticketRes["ticket_" + i].status}</span>
+    </li></ul>
+    </a>
+    </div>
         </div>
     </div>
 `;
@@ -39,19 +52,15 @@ function maketicketSlideHtml(_data) {
   ticketSlide.innerHTML = ticketHtml;
 
   var ticketSwiper = new Swiper(".ticket-slide", {
-    slidesPerView: 2, //슬라이드 몇장씩 보여줄거야
-    spaceBetween: 100, //보여지는 슬라이드 간의 간격
-    loop: true, //반복해서 무한루프
+    slidesPerView: 4, //슬라이드 몇장씩 보여줄거야
+    spaceBetween: 28, //보여지는 슬라이드 간의 간격
     //  자동 실행
-    autoplay: {
-      delay: 2500, //대기시간
-      disableOnInteraction: false, //사용자 터치후 자동실행 다시
-    },
+
     speed: 1000, // 이동속도 : 1000은 1초
     // 좌측, 우측 이동 버튼
     navigation: {
-      nextEl: ".ticket-slide-next",
-      prevEl: ".ticket-slide-prev",
+      nextEl: ".ticket-slide-wrapper .slide-next-bt",
+      prevEl: ".ticket-slide-wrapper .slide-prev-bt",
     },
   });
 }

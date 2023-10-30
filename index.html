@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title name -->
     <title>인터파크</title>
-    <!-- Link Swiper's CSS -->
+    <!-- Call swiper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Call section JavaScript -->
+    <script src="js/visual.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/tour.js"></script>
+    <script src="js/ticket.js"></script>
+    <script src="js/live.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/event.js"></script>
+    <!-- Call CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -14,25 +25,32 @@
   </head>
 
   <body>
+    <!-- body wrapper -->
     <div class="wrapper">
-      <!-- 상단 영역 -->
+      <!-- header area -->
       <header class="header">
-        <!-- 레이아웃 : div -->
+        <!-- header inner -->
         <div class="header-inner">
+          <!-- searchBar + memberMenu -->
           <div class="header-top">
-            <div class="header-top-left">
+            <!-- logo + search form area -->
+            <div class="header-left">
               <a href="index.html" class="logo"></a>
-              <!-- 검색은 div 하나 주자 -->
+              <!-- search area -->
               <div class="header-search">
-                <!-- 사용자가 데이터를 입력한다.(유일) -->
+                <!-- search form -->
                 <form class="search-form">
-                  <!-- 닫힌태그 <input /> -->
-                  <input type="text" class="search-word" />
+                  <input
+                    type="text"
+                    class="search-word"
+                    placeholder="80만원 여행상품권 이벤트"
+                  />
                   <input type="button" value="검색" class="search-bt" />
                 </form>
               </div>
             </div>
-            <div class="header-top-right">
+            <!-- member menu area -->
+            <div class="header-right">
               <ul class="member-menu">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
@@ -45,8 +63,8 @@
               </ul>
             </div>
           </div>
+          <!-- header bottom area -->
           <div class="header-bottom">
-            <!-- 카테고리 메뉴 -->
             <ul class="header-category">
               <li>
                 <a href="#"><img src="images/icon_tour.png" alt="" />투어</a>
@@ -84,20 +102,18 @@
           </div>
         </div>
       </header>
-      <!-- main area -->
-      <div class="main-area">
+      <!-- content area -->
+      <div class="content">
         <!-- visual section area -->
         <section class="visual">
           <div class="visual-inner">
             <!-- visual-section-swiper -->
             <div class="swiper visual-slide">
-              <div class="swiper-wrapper">
-                <!-- 외부 영역 연동 -->
-              </div>
+              <div class="swiper-wrapper"></div>
             </div>
             <!-- Swiper Navigation -->
-            <button class="visual-slide-prev"></button>
-            <button class="visual-slide-next"></button>
+            <button class="slide-prev-bt"></button>
+            <button class="slide-next-bt"></button>
           </div>
         </section>
         <!-- recommend section area -->
@@ -108,12 +124,12 @@
               <!-- recommend-header-title -->
               <h2 class="recommend-title">쇼핑 추천</h2>
               <!-- recommend-header-sub-title -->
-              <span class="recommend-txt"
+              <span class="recommend-sub"
                 >할인이 쎄다! 지금, 특가 상품을 확인하세요.</span
               >
             </div>
             <!-- recommend-section-main-area -->
-            <div class="recommend-main">
+            <div class="recommend-content">
               <!-- recommend-section-main-category -->
               <div class="recommend-category">
                 <ul class="recommend-list">
@@ -130,13 +146,13 @@
                   <div class="swiper-wrapper"></div>
                 </div>
                 <!-- Swiper Navigation -->
-                <button class="recommend-slide-prev"></button>
-                <button class="recommend-slide-next"></button>
+                <button class="slide-next-bt"></button>
+                <button class="slide-prev-bt"></button>
               </div>
             </div>
             <!-- recommend-footer-area -->
-            <div class="recommend-footer">
-              <button>쇼핑 홈 바로가기</button>
+            <div class="content-footer">
+              <a href="#" class="cate-more-bt"><span>쇼핑 홈 바로가기</span></a>
             </div>
           </div>
         </section>
@@ -144,16 +160,16 @@
         <!-- tour section -->
         <section class="tour">
           <div class="tour-inner">
-            <!-- tour-header area -->
+            <!-- tour-section-header-area -->
             <div class="tour-header">
-              <!-- tour-header-title-txt -->
+              <!-- tour-header-title -->
               <h2 class="tour-title">투어 특가</h2>
-              <!-- tour-header-sub-txt -->
+              <!-- tour-header-sub-title -->
               <span class="tour-txt">해외여행은 인터파크다</span>
             </div>
-            <!-- tour-section-main area -->
+            <!-- tour-section-main-area -->
             <div class="tour-main">
-              <!-- tour-category area -->
+              <!-- tour-section-main-category -->
               <div class="tour-category">
                 <ul class="tour-list">
                   <li>
@@ -166,117 +182,88 @@
                   <li><button class="cate-bt">해외숙소</button></li>
                 </ul>
               </div>
+              <!-- tour-main-swiper -->
               <div class="tour-slide-wrapper">
                 <div class="swiper tour-slide">
                   <div class="swiper-wrapper"></div>
                 </div>
+                <!-- Swiper Navigation -->
+                <button class="slide-next-bt"></button>
+                <button class="slide-prev-bt"></button>
               </div>
-              <!-- Swiper Navigation -->
-              <button class="tour-slide-prev"></button>
-              <button class="tour-slide-next"></button>
             </div>
-            <div class="tour-footer">
-              <button>투어 홈 바로가기</button>
+            <!-- tour-footer-area -->
+            <div class="content-footer">
+              <a href="#" class="cate-more-bt"><span>투어 홈 바로가기</span></a>
             </div>
           </div>
         </section>
+
         <!-- ticket section -->
         <section class="ticket">
           <div class="ticket-inner">
+            <!-- ticket-section-header-area -->
             <div class="ticket-header">
-              <h2 class="ticket-header-title-txt">티켓 랭킹</h2>
-              <span class="ticket-header-sub-txt"
-                >오늘 뭐볼까? 지금HOT한 공연</span
-              >
+              <!-- ticket-header-title -->
+              <h2 class="ticket-title">티켓 랭킹</h2>
+              <!-- ticket-header-sub-title -->
+              <span class="ticket-sub">오늘 뭐볼까? 지금HOT한 공연</span>
             </div>
-            <div class="ticket-main">
+            <!-- ticket-section-main-area -->
+            <div class="ticket-content">
+              <!-- ticket-section-main-category -->
               <div class="ticket-category">
                 <ul class="ticket-list">
                   <li>
-                    <button class="cate-bt cate-bt-active">뮤지컬</button>
+                    <button class="cate-bt cate-bt-active">
+                      망설이면 품절
+                    </button>
                   </li>
-                  <li><button class="cate-bt">콘서트</button></li>
-                  <li><button class="cate-bt">스포츠</button></li>
-                  <li><button class="cate-bt">전시/행사</button></li>
-                  <li><button class="cate-bt">클래식/무용</button></li>
-                  <li><button class="cate-bt">아동/가족</button></li>
-                  <li><button class="cate-bt">연극</button></li>
-                  <li><button class="cate-bt">래저/캠핑</button></li>
+                  <li><button class="cate-bt">패키지</button></li>
+                  <li><button class="cate-bt">국내숙소</button></li>
+                  <li><button class="cate-bt">해외숙소</button></li>
                 </ul>
               </div>
+              <!-- ticket-main-swiper -->
               <div class="ticket-slide-wrapper">
                 <div class="swiper ticket-slide">
                   <div class="swiper-wrapper"></div>
                 </div>
-                <!-- Swiper Navigation -->
-                <button class="ticket-slide-prev"></button>
-                <button class="ticket-slide-next"></button>
+                <!-- ticket Navigation -->
+                <button class="slide-next-bt"></button>
+                <button class="slide-prev-bt"></button>
               </div>
             </div>
-
-            <div class="ticket-footer">
-              <button>티켓 홈 바로가기</button>
+            <!-- tour-footer-area -->
+            <div class="content-footer">
+              <a href="#" class="cate-more-bt"><span>티켓 홈 바로가기</span></a>
             </div>
           </div>
         </section>
 
-        <!-- live area -->
+        <!-- live section -->
         <section class="live">
           <div class="live-inner">
+            <!-- live-section-header-area -->
             <div class="live-header">
-              <div class="live-header-title">
+              <!-- live-header-title -->
+              <div class="live-title">
                 <img src="./images/title_live.svg" src="" />
               </div>
-            </div>
-            <div class="live-main">
+
+              <!-- tour-main-swiper -->
               <div class="live-slide-wrapper">
                 <div class="swiper live-slide">
                   <div class="swiper-wrapper"></div>
                 </div>
                 <!-- Swiper Navigation -->
-                <button class="live-slide-prev"></button>
-                <button class="live-slide-next"></button>
+                <button class="slide-next-bt"></button>
+                <button class="slide-prev-bt"></button>
               </div>
             </div>
-
-            <div class="live-footer">
-              <button>티켓 홈 바로가기</button>
-            </div>
-          </div>
-        </section>
-
-        <!-- book area -->
-        <section class="book">
-          <div class="book-inner">
-            <div class="book-header">
-              <h2 class="book-header-title-txt">오늘의 도서</h2>
-              <span class="book-header-sub-txt"
-                >지금 읽기 딱 좋은 책, 놓치지 마세요!</span
-              >
-            </div>
-            <div class="book-main">
-              <div class="book-category">
-                <ul class="book-list">
-                  <li>
-                    <button class="cate-bt cate-bt-active">MD's Pick</button>
-                  </li>
-                  <li><button class="cate-bt">베스트셀러</button></li>
-                  <li><button class="cate-bt">신간추천</button></li>
-                  <li><button class="cate-bt">특가할인</button></li>
-                </ul>
-              </div>
-              <div class="book-slide-wrapper">
-                <div class="swiper book-slide">
-                  <div class="swiper-wrapper"></div>
-                </div>
-                <!-- Swiper Navigation -->
-                <button class="book-slide-prev"></button>
-                <button class="book-slide-next"></button>
-              </div>
-            </div>
-
-            <div class="ticket-footer">
-              <button>티켓 홈 바로가기</button>
+            <!-- tour-footer-area -->
+            <div class="content-footer">
+              <a href="#" class="cate-more-bt"><span>티켓 홈 바로가기</span></a>
             </div>
           </div>
         </section>
@@ -315,14 +302,6 @@
     </div>
   </body>
 </html>
-
-<script src="js/visual.js"></script>
-<script src="js/recommend.js"></script>
-<script src="js/tour.js"></script>
-<script src="js/ticket.js"></script>
-<script src="js/live.js"></script>
-<script src="js/book.js"></script>
-<script src="js/event.js"></script>
 
 <!-- Swiper JS : 1. 기능을 먼저 불러들여 줌-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

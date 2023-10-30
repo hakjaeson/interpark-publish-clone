@@ -4,7 +4,6 @@ recommendXttp.send();
 recommendXttp.onreadystatechange = function (event) {
   if (event.target.readyState == XMLHttpRequest.DONE) {
     const recommendResult = JSON.parse(event.target.response);
-    console.log(recommendResult);
     makerecommendSlideHtml(recommendResult);
   }
 };
@@ -63,8 +62,8 @@ function makerecommendSlideHtml(_data) {
     speed: 1000, // 이동속도 : 1000은 1초
     // 좌측, 우측 이동 버튼
     navigation: {
-      nextEl: ".recommend-slide-next",
-      prevEl: ".recommend-slide-prev",
+      nextEl: ".recommend-slide-wrapper .slide-next-bt",
+      prevEl: ".recommend-slide-wrapper .slide-prev-bt",
     },
   });
 }

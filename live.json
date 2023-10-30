@@ -1,8 +1,12 @@
 {
   "total": 6,
   "live_1": {
-    "file": "images/v1.png",
-    "url": "a.html"
+    "file": "images/l_1.jpg",
+    "url": "a.html",
+    "status": "방송예정",
+    "company": "소담상회 x 에이브랩",
+    "date": "10월31일 (화)",
+    "time": "16:00"
   },
   "live_2": {
     "file": "images/v2.jpg",

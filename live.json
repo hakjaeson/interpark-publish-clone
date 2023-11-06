@@ -2,15 +2,33 @@
   "total": 6,
   "live_1": {
     "file": "images/l_1.jpg",
+    "url": "ab.html",
+    "status": "방송예정",
+    "company": "소담상회 x 에이브랩",
+
+    "date": "10월31일 (화)",
+    "time": "16:00",
+
+    "sub_image": "images/shoes.jpeg",
+    "sub_title": "새로운 여행, 컨셉 트립 기획전",
+    "sub_discount": "50",
+    "sub_price": 55000,
+    "sub_url": "a.html"
+  },
+  "live_2": {
+    "file": "images/l_1.jpg",
     "url": "a.html",
     "status": "방송예정",
     "company": "소담상회 x 에이브랩",
-    "date": "10월31일 (화)",
-    "time": "16:00"
-  },
-  "live_2": {
-    "file": "images/v2.jpg",
-    "url": "b.html"
+
+    "date": "0",
+    "time": "0",
+
+    "sub_image": "images/shoes.jpeg",
+    "sub_title": "dummy_sub_title",
+    "sub_discount": "0",
+    "sub_price": 55000,
+    "sub_url": "a.html"
   },
   "live_3": {
     "file": "images/v3.jpg",

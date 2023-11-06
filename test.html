@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        height: 455px; /* 적절한 높이로 설정하세요 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .link {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="link">
+      <div class="container">
+        <div class="item">
+          <div><span>5</span></div>
+          <div><span>5</span></div>
+        </div>
+        <div class="item">
+          <div><span>5</span></div>
+          <div><span>5</span></div>
+        </div>
+        <div class="item">
+          <div><span>5</span></div>
+          <div><span>5</span></div>
+        </div>
+      </div>
+    </a>
+
+    <script>
+      const link = document.querySelector(".link");
+      link.addEventListener("click", () => {
+        // 클릭 시 수행할 작업을 입력하세요.
+        // 예를 들어, 페이지를 이동하려면 window.location.href = 'your_url';
+        // 또는 다른 작업을 수행할 수 있습니다.
+      });
+    </script>
+  </body>
+</html>

@@ -1,8 +1,10 @@
 {
   "total": 6,
   "book_1": {
-    "file": "images/v1.png",
-    "url": "a.html"
+    "file": "images/b_1.jpeg",
+    "url": "a.html",
+    "book_title":"앙기모쮜",
+    "book_price": "10000"
   },
   "book_2": {
     "file": "images/v2.jpg",

@@ -1,5 +1,5 @@
 {
-  "total": 6,
+  "total": 7,
   "recommend_1": {
     "file": "images/shoes.jpeg",
     "url": "a.html",
@@ -9,7 +9,10 @@
   },
   "recommend_2": {
     "file": "images/shoes.jpeg",
-    "url": "b.html"
+    "url": "a.html",
+    "discount": "0",
+    "price": "7,500",
+    "desc": "[스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50"
   },
   "recommend_3": {
     "file": "images/shoes.jpeg",
@@ -26,5 +29,8 @@
   "recommend_6": {
     "file": "images/shoes.jpeg",
     "url": "f.html"
+  },
+  "recommend_7": {
+    "url": "go.html"
   }
 }
